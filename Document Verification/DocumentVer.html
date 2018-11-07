@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+
+<head>
+	<title>Document Verification</title>
+	<meta name ="viewport" content = "width = device - width, intitial - scale = 1">
+	<link rel = "stylesheet" href ="/bootstrap.min.css">
+	<link href= "./app.css" rel=' stylesheet' type='text/css'>
+	<script src ="./app.js"> </script>
+	<script src ="./crypto.js"> </script>
+</head>
+
+<body>
+	<div class ="container-fluid">
+		<h1>Document Verification Blockchain App</h1>
+		<h3 style = "margin-top: 0px; margin-bottom: 30px;"></h3>
+	<div class = "row">
+		<div class = "col-md-8">
+
+	<table class ="table table-fluid">
+		<tr>
+			<th>Contract Address</th>
+			<td><span class="black">
+			<span id ="cf_address"></span></span></td>
+		</tr>
+		<tr>
+			<th>Documents Submitted</th>
+			<td><span class="black">
+			<span id ="cf_documents"></span></span></td>
+		</tr>
+	</table>
+	</div>
+</div>
+
+<div class ="row">
+<div class ="col-md-12">
+		<h2 style ="padding-top: 20px;">Add/Verify Document</h2>
+		<h3 style ="margin-top: 0px; margin-bottom: 30px;"> Calculate document hash and submit to blockchain or verify existing document </h3>
+<span class="black"> Coinbase Address:
+<span id = "cb_address" class ="c_address"></span></span><br>
+		<span class="black"> Coinbase Balance:
+		<span id = "cb_balance"></span> ETH</span><br><br>
+
+		<input class ="form-control" type ="file" name ="fileUpload" id = "fileUpload" /><br>
+		<button class ="btn btn-primary btn-lg" onclick ="calculateHash;">Calculate Hash</button><br><br>
+		<span class ="black">Hash: <span id ="docHash"></span></span><br>
+		<button class ="btn btn-primary btn-lg" onclick ="submitDocument();">Submit Document</button>
+		<button class ="btn btn-primary btn-lg" onclick ="verifyDocument();">Verify Document</button> <br><br>
+		<div id ="status"> &nbsp; </div>
+		</div>
+</div>
+	</div>
+	<script src ="/jquery.min.js"></script>
+	<script src ="/bootstrap.min.js"></script>
+</body>
+</html>

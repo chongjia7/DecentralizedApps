@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+
+<head>
+	<title>SolarCharger DApp</title>
+	<meta name ="viewport" content = "width = device - width, intitial - scale = 1">
+	<link rel = "stylesheet" href ="/bootstrap.min.css">
+	<link href= "./app.css" rel=' stylesheet' type='text/css'>
+	<script src ="./app.js"> </script>
+	<script src ="./crypto.js"> </script>
+</head>
+
+<body>
+	<div class ="container-fluid">
+		<h1>SolarCharger DApp</h1>
+		<h3 style = "margin-top: 0px; margin-bottom: 30px;"></h3>
+
+	<div class = "row">
+		<div class = "col-md-6">
+
+	<table class ="table table-fluid">
+		<tr>
+			<th>Contract Address</th>
+			<td><span class="black">
+			<span id ="cf_address"></span></span></td>
+		</tr>
+		<tr>
+			<th>Number of Stations</th>
+			<td><span class="black">
+			<span id ="cf_stations"></span></span></td>
+		</tr>
+		<tr>
+			<th>Number of Users</th>
+			<td><span class="black">
+			<span id ="cf_users"></span></span></td>
+		</tr>
+		<tr>
+			<th>Coin Rate</th>
+			<td><span class="black">
+			<span id ="cf_rate"></span></span></td>
+		</tr>
+	</table>
+	</div>
+</div>
+
+<div class ="row">
+	<div class ="col-md-6">
+		<h2 style ="padding-top: 20px;">User Registration</h2>
+		<input type="email" class ="form-control" id ="email" placeholder="Email"/><br>
+		<input type="text" class ="form-control" id ="name" placeholder="Name"/><br><br><br>
+		<button class ="btn btn-primary btn-lg" onclick ="registerUser();">REGISTER</button>
+		<br><br>
+	</div>
+		<div class ="col-md-6">
+			<h2 style ="padding-top: 20px;">Buy SolarCoins</h2>
+			<span class="black"> Coinbase Address:
+			<span id = "cb_address" class = "c_address"></span></span><br>
+			<span class="black"> Coinbase Balance:
+			<span id = "cb_balance"></span>ETH</span><br><br>
+
+			<input type ="email" class ="form-control" id ="email1" placeholder ="Email" /><br>
+			<input type ="text" class ="form-control" id ="amount" placeholder ="Amount" /><br>
+			<br><br>
+		</div>
+		<div id ="status">&nbsp;</div>
+	</div>
+</div>
+<script src ="/jquery.min.js"></script>
+	<script src ="/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+	
